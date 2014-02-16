@@ -27,4 +27,5 @@ ifile.close()
 import unicodecsv
 filename = open("transposed_for_kannanir_master.csv", 'wb')
 w = unicodecsv.writer(filename, encoding='utf-8')
+w.writerow(['Dags','Konnun','Flokkur','Fylgi'])
 w.writerows(batch)
